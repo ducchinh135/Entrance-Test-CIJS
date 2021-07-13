@@ -11,64 +11,30 @@ body {
 
 body {
     font-family: 'Lexend Exa', sans-serif;
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-#do-shorten {
-    position: relative;
-}
-
-#do-shorten img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    width: 34px;
-    height: 34px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#do-shorten::before {
+#btn-shorten {
     content: '';
-    width: 100%;
+    width: 40%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #198754d4;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#do-shorten.active img,
-#do-shorten.active::before {
-    opacity: 1;
-    visibility: visible;
+    background-color: #ffd452;
 }
 
 .result-link {
     font-weight: bold;
     font-size: 30px;
-    color: teal;
+    color: #2ebf91;
 }
 
 .btn {
     border: 2px solid transparent;
 }
 
-.btn-check:active + .btn-secondary,
-.btn-check:checked + .btn-secondary,
-.btn-secondary.active,
-.btn-secondary:active,
-.show > .btn-secondary.dropdown-toggle {
-    border: 2px solid black;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background: #eaeaee;
-    color: black;
-}
-
-.box-shorten-link {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.shorten-link__content {
     padding: 15px;
     border-radius: 20px;
 }
